@@ -1,0 +1,2 @@
+select * from ( select score(1), id, name from ingredient where contains( name, '{$onion}', 1 ) > 0 order by length(name) asc ) where rownum <= 10
+/

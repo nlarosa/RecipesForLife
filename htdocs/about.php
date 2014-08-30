@@ -1,0 +1,54 @@
+<?php session_start() ?>
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimus-scale=1">
+    <title>Recipes for Life - About</title>
+    <!-- Modernizr -->
+    <script src="./js/libs/modernizr-2.6.2.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="./js/libs.jquery-1.10.2.min.js"></script>
+    <!-- framework css -->
+    <link type ="text/css" rel="stylesheet" href="./css/groundwork.css">
+  </head>
+
+  <body>
+    <header class="padded">
+      <div class="container">
+        <div class="row padded">
+          <div class="centered bounceInDown animated yellow box round align-center">
+            <h1 class="zero museo-slab">Recipes For Life</h1>
+            <p class="quicksand"> An interactive system to track your family food needs.</p>
+          </div>
+          <nav role="navigation" class="nav gap-top">
+            <ul role="menubar">
+              <li><a href="./home.php"><i class="icon-home"></i>&nbsp Home</a></li>
+              <li><a href="./recipe_search.php"><i class="icon-search"></i>&nbsp Recipe Search</a></li>
+              <li><a href="./add_recipe.php"><i class="icon-plus"></i>&nbsp Add Recipe</a></li>
+              <li><a href="./shopping.php"><i class="icon-shopping-cart"></i>&nbsp Shopping List</a></li>
+              <li><a href="./about.php"><i class="icon-question"></i>&nbsp About Us</a></li>
+	      <li><a href="./main.html"><i class="icon-eject"></i>
+		<?php
+                        if(isset($_SESSION['id']))
+                                echo 'Log out';
+                        else
+                                echo 'Log in';
+                ?></a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <div class="container">
+      <div class="row padded">
+	<div class="centered bounceInUp animated blue box round align-center">
+	  <p class="quicksand"> Recipes for Life is a place for families to find and share recipes. It was developed by three students at the University of Notre Dame: Nicholas LaRosa, Zachary Lipp, and Sean Murphy. Etc. </p>  
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Sun May 4 11:56:49 2014
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   LDother.ctl
+Data File:      csv/other.csv
+  Bad File:     other.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table OTHER, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ID                                  FIRST     *   ,  O(") CHARACTER            
+NAME                                 NEXT     *   ,  O(") CHARACTER            
+
+Record 1380: Rejected - Error on table OTHER, column NAME.
+ORA-12899: value too large for column "SYSTEM"."OTHER"."NAME" (actual: 197, maximum: 100)
+
+Record 1381: Rejected - Error on table OTHER, column NAME.
+ORA-12899: value too large for column "SYSTEM"."OTHER"."NAME" (actual: 198, maximum: 100)
+
+Record 1382: Rejected - Error on table OTHER, column NAME.
+ORA-12899: value too large for column "SYSTEM"."OTHER"."NAME" (actual: 138, maximum: 100)
+
+Record 1383: Rejected - Error on table OTHER, column NAME.
+ORA-12899: value too large for column "SYSTEM"."OTHER"."NAME" (actual: 202, maximum: 100)
+
+
+Table OTHER:
+  1441 Rows successfully loaded.
+  4 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  33024 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:          1445
+Total logical records rejected:         4
+Total logical records discarded:        0
+
+Run began on Sun May 04 11:56:49 2014
+Run ended on Sun May 04 11:56:49 2014
+
+Elapsed time was:     00:00:00.13
+CPU time was:         00:00:00.02

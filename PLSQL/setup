@@ -1,0 +1,1 @@
+sqlplus -S system/sm_nl_zl_4RFL @setup

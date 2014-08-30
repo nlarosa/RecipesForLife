@@ -1,0 +1,4 @@
+sqlplus system/sm_nl_zl_4RFL @setup
+cd LDscripts
+./LoadIngredientTables.sh
+cd ..

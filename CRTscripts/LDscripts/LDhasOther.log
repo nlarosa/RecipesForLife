@@ -1,0 +1,61 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Sun May 4 11:56:49 2014
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   LDhasOther.ctl
+Data File:      csv/hasOther.csv
+  Bad File:     hasOther.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table HASOTHER, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+INGREDIENTID                        FIRST     *   ,  O(") CHARACTER            
+OTHERID                              NEXT     *   ,  O(") CHARACTER            
+MILLIGRAMSPER100G                    NEXT     *   ,  O(") CHARACTER            
+
+Record 13514: Rejected - Error on table HASOTHER.
+ORA-02291: integrity constraint (SYSTEM.FK_OTHER_HASOTH) violated - parent key not found
+
+Record 13515: Rejected - Error on table HASOTHER.
+ORA-02291: integrity constraint (SYSTEM.FK_OTHER_HASOTH) violated - parent key not found
+
+Record 13516: Rejected - Error on table HASOTHER.
+ORA-02291: integrity constraint (SYSTEM.FK_OTHER_HASOTH) violated - parent key not found
+
+Record 13517: Rejected - Error on table HASOTHER.
+ORA-02291: integrity constraint (SYSTEM.FK_OTHER_HASOTH) violated - parent key not found
+
+
+Table HASOTHER:
+  18675 Rows successfully loaded.
+  4 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  49536 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         18679
+Total logical records rejected:         4
+Total logical records discarded:        0
+
+Run began on Sun May 04 11:56:49 2014
+Run ended on Sun May 04 11:56:50 2014
+
+Elapsed time was:     00:00:00.69
+CPU time was:         00:00:00.05
